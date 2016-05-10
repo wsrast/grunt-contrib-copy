@@ -30,6 +30,11 @@ _Run this task with the `grunt copy` command._
 Task targets, files and options may be specified according to the grunt [Configuring tasks](http://gruntjs.com/configuring-tasks) guide.
 ### Options
 
+#### force
+Type: `Boolean`
+
+Set this to true to force overwrite of read-only files.
+
 #### process
 Type: `Function(content, srcpath)`
 

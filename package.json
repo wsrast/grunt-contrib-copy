@@ -1,7 +1,7 @@
 {
   "name": "grunt-contrib-copy-force",
   "description": "Copy files and folders",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": {
     "name": "wsrast",
     "url": "https://twitter.com/WesleyRast"
