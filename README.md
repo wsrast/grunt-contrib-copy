@@ -1,8 +1,10 @@
-# grunt-contrib-copy v1.0.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-copy.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-copy) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/fe6l517l01ys2y86/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-copy/branch/master)
+# grunt-contrib-copy-force v0.0.2 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-copy.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-copy) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/fe6l517l01ys2y86/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-copy/branch/master)
 
-> Copy files and folders
+> Copy files and folders, overwriting read-only files when force option is true
 
+I'm forking this from the main grunt-contrib-copy package to solve an issue I have with TFS source control making registered files read-only by default. It's very irritating, and I'm shocked that I was unable to find anyone else who'd run into this problem and been forced to solve it in a similar manner.
 
+I'm a bit new to publishing NPM packages, so if you see something amiss, feel free to point it out and I'll get it taken care of. Hopefully, someone else will find this useful.
 
 ## Getting Started
 

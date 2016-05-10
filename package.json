@@ -1,10 +1,10 @@
 {
-  "name": "grunt-contrib-copy",
+  "name": "grunt-contrib-copy-force",
   "description": "Copy files and folders",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "author": {
-    "name": "Grunt Team",
-    "url": "http://gruntjs.com/"
+    "name": "wsrast",
+    "url": "https://twitter.com/WesleyRast"
   },
   "repository": "gruntjs/grunt-contrib-copy",
   "license": "MIT",
