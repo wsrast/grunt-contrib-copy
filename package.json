@@ -13,7 +13,7 @@
   },
   "main": "tasks/copy.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test --verbose"
   },
   "dependencies": {
     "chalk": "^1.1.1",
