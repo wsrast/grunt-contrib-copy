@@ -1,4 +1,4 @@
-# grunt-contrib-copy-force v0.0.2 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-copy.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-copy) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/fe6l517l01ys2y86/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-copy/branch/master)
+# grunt-contrib-copy-force v0.0.4
 
 > Copy files and folders, overwriting read-only files when force option is true
 
@@ -11,13 +11,13 @@ I'm a bit new to publishing NPM packages, so if you see something amiss, feel fr
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install grunt-contrib-copy --save-dev
+npm install grunt-contrib-copy-force --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-contrib-copy');
+grunt.loadNpmTasks('grunt-contrib-copy-force');
 ```
 
 *This plugin was designed to work with Grunt 0.4.x. If you're still using grunt v0.3.x it's strongly recommended that [you upgrade](http://gruntjs.com/upgrading-from-0.3-to-0.4), but in case you can't please use [v0.3.2](https://github.com/gruntjs/grunt-contrib-copy/tree/grunt-0.3-stable).*
@@ -75,6 +75,9 @@ Whether to preserve the timestamp attributes(`atime` and `mtime`) when copying f
 copy: {
   main: {
     files: [
+      // includes files within path, overwriting read-only
+      {expand: true, src: ['path/*'], dest: 'dest/', filter: 'isFile', force: true},
+    
       // includes files within path
       {expand: true, src: ['path/*'], dest: 'dest/', filter: 'isFile'},
 
@@ -260,27 +263,5 @@ Aborted due to warnings.
 
 ## Release History
 
- * 2016-03-04   v1.0.0   Bump devDependencies. Add example of using relative path. Point main to task and remove peerDeps.
- * 2015-10-19   v0.8.2   Fix expand-less copies with multiple files.
- * 2015-08-20   v0.8.1   Update `chalk` dependency.
- * 2015-02-20   v0.8.0   Performance improvements. The `mode` option now also applies to directories. Fix path issue on Windows.
- * 2014-10-15   v0.7.0   Add timestamp option to disable preserving timestamp when copying.
- * 2014-09-17   v0.6.0   Update chalk dependency and other devDependencies. Preserve file timestamp when copying.
- * 2013-12-23   v0.5.0   If an encoding is specified, overwrite `grunt.file.defaultEncoding`. Rename `processContent`/`processContentExclude` to `process`/`noProcess` to match Grunt API. `mode` option to copy existing or set file permissions.
- * 2013-03-26   v0.4.1   Output summary by default ("Copied N files, created M folders"). Individual transaction output available via `--verbose`.
- * 2013-02-15   v0.4.0   First official release for Grunt 0.4.0.
- * 2013-01-23   v0.4.0rc7   Updating grunt/gruntplugin dependencies to rc7. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.
- * 2013-01-14   v0.4.0rc5   Updating to work with grunt v0.4.0rc5. Conversion to grunt v0.4 conventions. Replace `basePath` with `cwd`. Empty directory support.
- * 2012-10-18   v0.3.2   Pass `copyOptions` on single file copy.
- * 2012-10-12   v0.3.1   Rename grunt-contrib-lib dep to grunt-lib-contrib.
- * 2012-09-24   v0.3.0   General cleanup and consolidation. Global options depreciated.
- * 2012-09-18   v0.2.4   No valid source check.
- * 2012-09-17   v0.2.3   `path.sep` fallback for Node.js <= 0.7.9.
- * 2012-09-17   v0.2.2   Single file copy support. Test refactoring.
- * 2012-09-07   v0.2.0   Refactored from grunt-contrib into individual repo.
-
----
-
-Task submitted by [Chris Talkington](http://christalkington.com/)
-
-*This file was generated on Thu Apr 07 2016 15:11:09.*
+ * 2016-05-10   v0.0.4   Further edits of package.json and readme.md
+ * 2016-05-10   v0.0.3   Initial commits and edits of package.json and readme.md

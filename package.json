@@ -1,19 +1,19 @@
 {
   "name": "grunt-contrib-copy-force",
-  "description": "Copy files and folders",
-  "version": "0.0.3",
+  "description": "Copy files and folders, forcing overwrite of read-only files",
+  "version": "0.0.4",
   "author": {
     "name": "wsrast",
     "url": "https://twitter.com/WesleyRast"
   },
-  "repository": "gruntjs/grunt-contrib-copy",
+  "repository": "wsrast/grunt-contrib-copy-force",
   "license": "MIT",
   "engines": {
     "node": ">=0.10.0"
   },
   "main": "tasks/copy.js",
   "scripts": {
-    "test": "grunt test --verbose"
+    "test": "grunt test"
   },
   "dependencies": {
     "chalk": "^1.1.1",
@@ -31,6 +31,5 @@
   ],
   "files": [
     "tasks"
-  ],
-  "appveyor_id": "fe6l517l01ys2y86"
+  ]
 }
