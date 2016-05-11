@@ -1,4 +1,4 @@
-# grunt-contrib-copy-force v0.0.4
+# grunt-contrib-copy-force v0.0.5
 
 > Copy files and folders, overwriting read-only files when force option is true
 
@@ -263,5 +263,6 @@ Aborted due to warnings.
 
 ## Release History
 
+ * 2016-05-10   v0.0.5   Adjustments to tag and version number
  * 2016-05-10   v0.0.4   Further edits of package.json and readme.md
  * 2016-05-10   v0.0.3   Initial commits and edits of package.json and readme.md
