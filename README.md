@@ -4,7 +4,7 @@
 
 I'm forking this from the main grunt-contrib-copy package to solve an issue I have with TFS source control making registered files read-only by default. It's very irritating, and I'm shocked that I was unable to find anyone else who'd run into this problem and been forced to solve it in a similar manner.
 
-I'm a bit new to publishing NPM packages, so if you see something amiss, feel free to point it out and I'll get it taken care of. Hopefully, someone else will find this useful.
+Hopefully, someone else will find this useful.
 
 ## Getting Started
 
